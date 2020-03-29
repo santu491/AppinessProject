@@ -5,7 +5,7 @@ import { loginValidation } from '../Redux/ActionCreator'
 import UserName from './UserName'
 import Password from './Password'
 import LoginButton from './LoginButton'
-import commonStyles from './CommonStyles'
+import commonStyles from '../Styles/CommonStyles'
 
 class LoginScreen extends Component {
 

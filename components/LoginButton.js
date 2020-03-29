@@ -1,6 +1,6 @@
 import React from 'react'
 import {  Text, TouchableHighlight } from 'react-native'
-import commonStyles from './CommonStyles'
+import commonStyles from '../Styles/CommonStyles'
 
 const LoginButton = (props) => {
     return (

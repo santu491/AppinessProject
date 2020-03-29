@@ -4,7 +4,7 @@ import { FlatList, View, Text, BackHandler } from 'react-native';
 import { connect } from 'react-redux'
 import { getEmployeeData } from '../Redux/ActionCreator'
 
-import commonStyles from './CommonStyles'
+import commonStyles from '../Styles/CommonStyles'
 
 class DashBoard extends Component {
     constructor(props) {

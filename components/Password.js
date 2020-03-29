@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, TextInput } from 'react-native'
-import commonStyles from './CommonStyles'
+import commonStyles from '../Styles/CommonStyles'
 
 const Password = (props) => {
     return (

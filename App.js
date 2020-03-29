@@ -21,18 +21,13 @@ export default function App(props) {
               name="LoginScreen"
               component={LoginScreen}
               options={{
-
                 headerShown: false
               }}
-
-
             />
             <Stack.Screen name="DashBoard" component={DashBoard}
               options={{
                 headerShown: false
               }}
-
-
             />
           </Stack.Navigator>
         </NavigationContainer>

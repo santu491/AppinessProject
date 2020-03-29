@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  SafeAreaView, Alert } from 'react-native';
+import {  SafeAreaView, Alert,Keyboard } from 'react-native';
 import { connect } from 'react-redux'
 import { loginValidation } from '../Redux/ActionCreator'
 import UserName from './UserName'
@@ -29,6 +29,7 @@ class LoginScreen extends Component {
     }
 
     submitLogin = () => {
+        Keyboard.dismiss()
         this.validation()
     }
 

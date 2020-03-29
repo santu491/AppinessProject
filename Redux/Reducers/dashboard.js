@@ -4,6 +4,7 @@ const initialstate = {
     employeeData: []
 }
 
+// Dashboard reducer is being created
 export const DashBoard = (state = initialstate, action) => {
     switch (action.type) {
         case ActionTypes.EMPLOYEE_DATA:

@@ -7,6 +7,7 @@ import Password from './Password'
 import LoginButton from './LoginButton'
 import commonStyles from '../Styles/CommonStyles'
 
+// LoginScreen Component is being created.
 class LoginScreen extends Component {
 
     constructor(props) {
@@ -17,22 +18,27 @@ class LoginScreen extends Component {
         }
     }
 
+    // Set User Name
     enterUserName = (text) => {
         this.setState({
             userName: text
         })
     }
+
+    // Set Password
     enterPassword = (text) => {
         this.setState({
             password: text
         })
     }
 
+    
     submitLogin = () => {
         Keyboard.dismiss()
         this.validation()
     }
 
+    // Check the validaytions
     validation = async () => {
         if (this.state.userName === "") {
             Alert.alert("Enter User Name")
@@ -45,6 +51,8 @@ class LoginScreen extends Component {
                 userName: this.state.userName,
                 password: this.state.password
             }
+            
+            // Dispatch action to check validation
             await this.props.loginValidation(loginData)
             if (this.props.isLoginSuccess) {
                 Alert.alert(

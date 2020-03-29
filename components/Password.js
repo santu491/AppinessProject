@@ -2,6 +2,7 @@ import React from 'react'
 import { View, TextInput } from 'react-native'
 import commonStyles from '../Styles/CommonStyles'
 
+// Password Component is being created.
 const Password = (props) => {
     return (
         <View>

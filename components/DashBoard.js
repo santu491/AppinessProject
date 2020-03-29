@@ -6,11 +6,15 @@ import { getEmployeeData } from '../Redux/ActionCreator'
 
 import commonStyles from '../Styles/CommonStyles'
 
+// Dash board component is being created
+
 class DashBoard extends Component {
     constructor(props) {
         super(props);
 
     }
+
+    // Render employee details in dash board
     renderDashBoard = ({ item }) => {
         return (
             <View style={commonStyles.employeeView}>
@@ -24,8 +28,9 @@ class DashBoard extends Component {
 
     }
     componentDidMount() {
-        this.props.getEmployeeData()
 
+        // dispatch action  to get employee data from store 
+        this.props.getEmployeeData()
         BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
     }
 
@@ -33,6 +38,8 @@ class DashBoard extends Component {
     componentWillUnmount() {
         BackHandler.removeEventListener('hardwareBackPress', this.handleBackButton);
     }
+
+    // Disabled device back button
     handleBackButton() {
          return true;
     }

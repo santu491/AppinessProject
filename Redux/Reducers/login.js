@@ -3,6 +3,7 @@ const initialState = {
     isLoginSuccess: false
 }
 
+// Login reducer is being created
 export const Login = (state = initialState, action) => {
     switch (action.type) {
         case ActionTypes.LOGIN_SUCCESS:
